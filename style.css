@@ -32,7 +32,6 @@ html{
     background-color: hsl(263, 55%, 52%);
     height: 500px;
     color: white;
-    border: 1px dashed red;   
 }
 .q-mark{
     font-size: 140px;
