@@ -5,16 +5,19 @@ html{
 
 .main-container, .left-section, .upper-left, .lower-left{
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 .main-container{
     height: 2200px;
     width: 100vw;
     margin: 0px;
+    box-sizing: border-box;
+    padding: 20%;
 }
 
 .upper1, .upper2, .lower1, .lower2, .right-section{
-    width: 85%;
+    width: 350px;
     color: rgb(255, 255, 255);
     margin: 15px;
     align-self: center;
