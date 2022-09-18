@@ -9,11 +9,12 @@ html{
     flex-direction: column;
 }
 .main-container{
-    height: 2500px;
+    height: 2200px;
     width: 100vw;
     margin: 0px;
     box-sizing: border-box;
     padding: 20%;
+    padding-left: 17%;
 }
 
 .upper1, .upper2, .lower1, .lower2, .right-section{
@@ -30,15 +31,16 @@ html{
 .upper1{
     background-color: hsl(263, 55%, 52%);
     height: 500px;
-    color: white;   
+    color: white;
+    border: 1px dashed red;   
 }
 .q-mark{
     font-size: 140px;
     color: rgba(255, 255, 255, 0.425);
     position: absolute;
-    left: 220px;
-    top:120px;
-    margin: 0px;  
+    right: 90px;
+    top:10px;
+    margin: 0px; 
 }
 .upper1> .pic-name, .upper2> .pic-name, .lower1> .pic-name, .lower2> .pic-name, .right-section> .pic-name{
     display: flex;
@@ -111,6 +113,44 @@ html{
     background-color: hsl(0, 0%, 100%);
     height: 600px;
     color: black;
+}
+
+@media screen and (min-width: 1200px){ 
+    .main-container,.upper-left, .lower-left{
+        flex-direction: row;
+        padding: 20px;
+        padding-left: 10px;
+    }
+    .upper-left, .lower-left{
+        padding: 10px;
+    }
+    .upper1, .upper2, .lower1, .lower2{
+        width: 270px;
+        height: 300px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+    .main-container{
+        height: 1000px;
+    }
+    .right-section{
+        height: 628px;
+        margin: 0px;
+        width: 300px;
+    }
+    .upper1, .lower2{
+        width: 580px;
+    }
+    .upper1> .pic-name, .upper2> .pic-name, .lower1> .pic-name, .lower2> .pic-name, .right-section> .pic-name{
+        margin-bottom: 12px;
+    }
+    .upper1> .p2, .upper2> .p2, .lower1> .p2, .lower2> .p2{
+        font-size: 14.5px;
+    }
+    .right-section> .p2{
+        font-size: 16px;
+    }
+
 }
 
 
